@@ -10,15 +10,17 @@ void setup() {
   print_init_msg();
   init_WiFi(ssid_WiFi, pass_WiFi);
   init_HTTP(address, port);
-  init_sensors();
+  init_sensors(true);
 
 }
 
 void loop() {
 
+  init_sensors(false);  // Reinit Sensors
+
   j = generate_json();
 
-  send_HTTP(j);
+  //send_HTTP(j);
 
   delay(interval * 1000);
 
