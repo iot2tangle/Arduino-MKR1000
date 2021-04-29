@@ -18,6 +18,8 @@ void loop() {
 
   init_sensors(false);  // Reinit Sensors
 
+  read_sensors();
+
   j = generate_json();
 
   //send_HTTP(j);
