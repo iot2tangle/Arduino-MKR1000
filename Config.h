@@ -1,20 +1,20 @@
 #ifndef _CONFIG_H
 #define _CONFIG_H
 
-/* ----- ARCHIVO CONFIGURACION ----- */
+/* ----- CONFIG FILE ----- */
 
 /* Device */
-const char* id_name = "ESP-ROBOT-CINTRA";
+const char* id_name = "Arduino-MKR1000";
 
-/* WiFi Network Configuracion */
-const char* ssid_WiFi = "FTTH-BELBRUNO.M";
-const char* pass_WiFi = "redbba12";
+/* WiFi Network Configuration */
+const char* ssid_WiFi = "mySSID";
+const char* pass_WiFi = "myPASS";
 
 /* HTTP Configuracion */
-const char* address = "192.168.1.115";  /* Endpoint address (HTTP), must NOT include 'http://xxx' or 'tcp://xxx' */
+const char* address = "192.168.1.XXX";  /* Endpoint address (HTTP), must NOT include 'http://xxx' or 'tcp://xxx' */
 int port = 8080;
 
-/* Intervalo de tiempo entre toma-envio de datos */
-long interval = 20;    /* Tiempo en segundos */
+/* Interval of time */
+long interval = 20;    /* Time in seconds between collect data */
 
 #endif
