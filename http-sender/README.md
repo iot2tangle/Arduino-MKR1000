@@ -17,7 +17,7 @@ This is the list of Sensors/Modules that you can connect and it will be recogniz
 
 The following diagram explains how each sensor of our stack must be connected to the pins. The *Arduino MKR1000 development board* has been used in this diagram.
 
-![I2T Sensors Stack on MKR1000](https://iot2tangle.io/assets/screenshots/ESP32-I2T.png)
+![I2T Sensors Stack on MKR1000](https://i.postimg.cc/d1DRs4Zr/MKR1000-diagram.png)
 
 **It is not necessary to have all the sensors listed here**, the code is able to detect which sensors were connected. In the case of not connecting any sensor, the only real data that will be displayed on the Tangle will be the Internal Temperature of *Arduino MKR1000*.
 
