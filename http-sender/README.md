@@ -84,7 +84,7 @@ Upon completion, the firmware is Uploaded to your *Arduino MKR1000*. If the *I2T
 
 The following screenshot is a reading of the *Serial Port*, you should see something like this:
 
-![Arduino MKR1000 sending data to the Tangle](https://i.postimg.cc/cH6TWpXP/Screenshot-from-2020-10-16-11-33-05.png)
+![Arduino MKR1000 sending data to the Tangle](https://i.postimg.cc/xjy4yVmd/Screenshot-from-2021-05-06-10-32-35.png)
 
 
 # Setting up the Streams HTTP Gateway
