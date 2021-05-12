@@ -58,11 +58,12 @@ const char* ssid_WiFi = "mySSID";
 const char* pass_WiFi = "myPASS";
 
 /* HTTP Configuracion */
-const char* address = "192.168.1.XXX";  /* Endpoint address (HTTP), must NOT include 'http://xxx' or 'tcp://xxx' */
+const char* address = "192.168.1.XXX";  /* Address (HTTP), must NOT include 'http://xxx' or 'tcp://xxx' */
+const char* endpoint = "/sensor_data";  /* Endpoint (HTTP) */
 int port = 8080;
 
 /* Interval of time */
-long interval = 20;    /* Time in seconds between collect data */
+long interval = 15;    /* Time in seconds between collect data */
 ```
 
 ### 5) Open Project and 'Upload' in your Board:
@@ -84,7 +85,7 @@ Upon completion, the firmware is Uploaded to your *Arduino MKR1000*. If the *I2T
 
 The following screenshot is a reading of the *Serial Port*, you should see something like this:
 
-![Arduino MKR1000 sending data to the Tangle](https://i.postimg.cc/xjy4yVmd/Screenshot-from-2021-05-06-10-32-35.png)
+![Arduino MKR1000 sending data to the Tangle](https://i.postimg.cc/cL2ChrZn/Screenshot-from-2021-05-12-18-09-43.png)
 
 
 # Setting up the Streams HTTP Gateway
