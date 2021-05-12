@@ -302,7 +302,7 @@ char* generate_json()
 
 	strcat(json, "],\"device\":\"");
 	strcat(json, dev_name);
-	strcat(json, "\",\"timestamp\":\"0\"}");
+	strcat(json, "\",\"timestamp\":\"0\"}");	
 	
 	Serial.print("JSON: ");
 	Serial.println(json);
@@ -310,7 +310,7 @@ char* generate_json()
 	return json;
 }
 
-void send_HTTP(const char* jsondata, const char* serverAddress, int port)
+void send_HTTP(const char* jsondata, const char* serverAddress, const char* serverEndpoint, int port)
 {
 	Serial.println("\t\tSending Data to Tangle...");
 
@@ -320,16 +320,18 @@ void send_HTTP(const char* jsondata, const char* serverAddress, int port)
 
 	String contentType = "application/json";
 
-	client.post("/", contentType, jsondata);
+	client.post(serverEndpoint, contentType, jsondata);
 
 	// read the status code and body of the response
 	int statusCode = client.responseStatusCode();
 	String response = client.responseBody();
 
-	Serial.print("Status code: ");
-	Serial.println(statusCode);
-	Serial.print("Response: ");
-	Serial.println(response);
+	if (statusCode == 200){
+		Serial.print("\t*** Data Sucessfully Sent to Tangle\n\t\tChannel ID: "); Serial.println(response);
+	}
+	else{
+		Serial.println("\tNETWORK ERROR!");
+	}
 
 	delay(200);
 }

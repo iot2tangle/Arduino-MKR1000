@@ -10,6 +10,6 @@ void init_sensors(bool);
 void read_sensors();
 void print_counter(int);
 char* generate_json();
-void send_HTTP(const char*, const char*, int);
+void send_HTTP(const char*, const char*, const char*, int);
 
 #endif

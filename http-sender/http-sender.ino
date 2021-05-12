@@ -26,7 +26,7 @@ void loop() {
 
   j = generate_json();
 
-  send_HTTP(j, address, port);
+  send_HTTP(j, address, endpoint, port);
 
   delay(interval * 1000);
 
