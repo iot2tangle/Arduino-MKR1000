@@ -1,7 +1,5 @@
 # Arduino MKR1000 - IOT2TANGLE
 
-<img src="https://i.postimg.cc/hGRghxcp/arduino-logo.png" width="300" align="right">
-
 ***Arduino*** is an open-source platform used for building electronics projects. Arduino consists of both a *physical programmable circuit board* (often referred to as a microcontroller) and a piece of *software*, or IDE (Integrated Development Environment) that runs on your computer, used to write and upload computer code to the physical board.
 
 The *Arduino* platform has become quite popular among people who are just starting with electronics, due to the simplicity that its environment offers, especially the junction between *Hardware-Software* in electronics used to be very problematic, *Arduino* solved this by bringing a fairly simple solution and generic.
